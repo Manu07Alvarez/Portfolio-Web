@@ -1,0 +1,38 @@
+<!-- Navegation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+      <a class="navbar-brand">Argentina Programa</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <div class="social-icons">
+              <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+              <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+              <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-icon" href="#!"><i class="fa-brands fa-instagram"></i></a>
+              <a class="social-icon" routerLink="/login"><i class="fa-solid fa-user"></i></a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+<!-- Page Content-->
+<div class="container-fluid p-0">
+  <!-- Image logo and Banner -->
+  <section class="section-image" id="banner">
+      <div class="image-banner">
+          <div class="banner" id="fondo">
+              <img [src]="miPortfolio.img" alt="" id="img">
+              <button class="edit-button"><i class="fa-solid fa-pen"></i></button>
+              <div class="container-image">
+                  <img [src]="miPortfolio.image" id="image">
+              </div>
+          </div>
+          <h1 class="mb-0" id="name">
+              {{miPortfolio.name}}
+          </h1>
+          <p class="lead" id="work">{{miPortfolio.work}} </p>
+          <p class="lead mb-5" id="localization"> {{miPortfolio.localization}} </p>
+      </div>
+  </section>
+  <hr class="m-0" />
+</div>

@@ -1,0 +1,17 @@
+<section class="resume-section" id="projects">
+  <ul>
+    <li *ngFor="let projects of projectsList">
+      <button class="edit-button"><i class="fa-solid fa-plus"></i></button>
+      <h2 class="mb-5" id="title"> {{projects.title}} </h2>
+      <div class="separate-container">
+          <div class="button-center">
+              <button class="edit-button"><i class="fa-solid fa-trash"></i></button>
+              <button class="edit-button"><i class="fa-solid fa-pen"></i></button>
+          </div>
+          <h3 class="mb-0" id="name"> {{projects.name}} </h3>
+          <p class="subheading mb-3" id="detail"> {{projects.detail}} </p>
+      </div>
+    </li>
+  </ul>
+</section>
+<hr class="m-0" />

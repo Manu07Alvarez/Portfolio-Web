@@ -1,0 +1,22 @@
+<section class="resume-section" id="education">
+  <ul>
+    <li *ngFor="let education of educationList">
+      <button class="edit-button"><i class="fa-solid fa-plus"></i></button>
+      <h2 class="mb-5" id="title">Educacion</h2>
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <div class="image-experience">
+            <img [src]="education.image" alt="" id="image">
+          </div>
+          <button class="edit-button"><i class="fa-solid fa-trash"></i></button>
+          <button class="edit-button"><i class="fa-solid fa-pen"></i></button>
+          <h3 class="mb-0" id="facility"> {{education.facility}} </h3>
+          <div class="mb-2" id="work"> {{education.work}} </div>
+          <div class="subheading mb-3" id="date"> {{education.date}} </div>
+          <p></p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+<hr class="m-0" />

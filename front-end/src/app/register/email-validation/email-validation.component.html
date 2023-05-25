@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-12">
+     <div class="main-verification-input-wrap">
+    <ul>
+      <li>The Last step to create you account is verificate your email</li>
+      <li>You will recieve a verification code on your email. Enter that code below.</li>
+      <li>If somehow, you did not recieve the verification email then <button class="send-verf-email" (click)="enviarCorreoVerificacion()">Resend Verification Email</button></li>
+    </ul>
+      <div class="main-verification-input fl-wrap">
+         <div class="main-verification-input-item"> <input type="text"  value="" placeholder="Enter the verification code"  [(ngModel)]="codigoVerificacion"> </div> <button class="main-verification-button" (click)="enviarVerificarCodigo()">Verify Now</button>
+         </div>
+     </div>
+  </div>
+</div>

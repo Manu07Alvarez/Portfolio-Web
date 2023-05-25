@@ -1,0 +1,17 @@
+<section class="resume-section" id="skills">
+  <button class="edit-button"><i class="fa-solid fa-plus"></i></button>
+  <ul>
+    <li *ngFor="let skills of skillsList">
+      <h2 class="mb-5" id="title"> {{skills.title}} </h2>
+      <div class="button-center">
+          <button class="edit-button"><i class="fa-solid fa-trash"></i></button>
+          <button class="edit-button"><i class="fa-solid fa-pen"></i></button>
+      </div>
+      <p class="center-text" id="name"> {{skills.name}} </p>
+      <div class="bar-container">
+          <div class="bar" [style.width]="skills.capability" id="capability"> {{skills.capability}} </div>
+      </div>
+    </li>
+  </ul>
+</section>
+<hr class="m-0" />

@@ -1,0 +1,54 @@
+{
+  "img": "../../../assets/img/banner.jpg",
+  "image": "../../../assets/img/snoopy.jpg",
+  "name": "Fabian Prutt",
+  "work": "Profesor en La UNLP",
+  "localization": "Buenos Aires(Argentina)",
+  "title": "Acerca De",
+  "description": "Soy una persona apasionada por la tecnología y la informática. Me gusta aprender sobre nuevas herramientas y lenguajes de programación para mejorar mis habilidades y poder aplicarlas en diferentes proyectos. Me considero una persona muy proactiva y comprometida con los objetivos que me propongo.",
+  "experience": [{
+      "image": "../../assets/img/Empresa.png",
+      "title": "Experiencia",
+      "work": "Desarrollador De Software",
+      "facility": "Addepto - Jornada Completa",
+      "date": "Junio 2019 - presente - New York, U.S",
+      "details": [
+    {
+      "detail": "Diseño y desarrollo de aplicaciones web utilizando HTML, CSS, JavaScript y frameworks como React y Angular."
+    },
+    {
+      "detail": "Desarrollo de aplicaciones móviles para Android utilizando Kotlin y Java."
+    },
+    {
+      "detail": "Trabajo en equipo con otros desarrolladores y diseñadores para asegurar la calidad del producto final."
+    },
+    {
+      "detail": "Implementación de soluciones innovadoras y mejoras en procesos de desarrollo."
+    }
+    ]
+  }
+  ],
+  "education": [{
+    "title": "Educacion",
+    "image": "../../../assets/img/unlp.png",
+    "facility": "Universidad Nacional De La Plata",
+    "work": "Licenciatura en Informática",
+    "date": "Agosto 2014 - Mayo 2019"
+  }],
+  "skills": [{
+    "title": "Hard Skills & Soft Skills",
+    "name": "Backend Developer",
+    "capability": "75%"
+    },
+    {
+      "name": "Capacidad de análisis y resolución de problemas.",
+      "capability": "50%"
+    }
+  ],
+  "projects": [{
+    "title": "Proyectos",
+    "name": "Seguimiento De Inventario",
+    "detail": "Implementación de un sistema de seguimiento de inventario utilizando Python y una base de datos NoSQL."
+  }
+  ]
+}
