@@ -6,24 +6,16 @@ import { catchError} from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class RegisterService {
-
-  private verifiedUrl = 'http://localhost:8080/api/auth/register';
-  private verifiedCodeUrl = 'http://localhost:8080/api/auth/verificationCode';
+export class LoginService {
 
   constructor(private http: HttpClient) { }
 
+  private loginURL = 'http://localhost:8080/api/auth/authenticate';
 
-  crearUser(datosUser: any){
-    return this.http.post(this.verifiedUrl, datosUser).pipe(
+  login(datosUser: any){
+    return this.http.post(this.loginURL, datosUser).pipe(
     catchError(this.handleError));
   }
-
-  crearVerificationCodeInDb(datosUser : any){
-    return this.http.post(this.verifiedCodeUrl, datosUser)
-  }
-
-
 
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
@@ -42,4 +34,3 @@ export class RegisterService {
     });
   }
 }
-

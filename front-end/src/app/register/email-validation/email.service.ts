@@ -9,8 +9,8 @@ import { Observable, catchError, map } from 'rxjs';
 
 export class EmailService {
 
-  private sendMail = 'http://localhost:8080/sendVerificationCode';
-  private verifyCode = 'http://localhost:8080/verify'
+  private sendMail = 'http://localhost:8080/api/auth/sendVerificationCode';
+  private verifyCode = 'http://localhost:8080/api/auth/verify'
 
   constructor(private http: HttpClient, private cookieService: CookieService, private router: Router) { }
 
